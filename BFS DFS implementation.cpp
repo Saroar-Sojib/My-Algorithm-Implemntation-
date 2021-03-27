@@ -1,15 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1000
-int mod(string n, ll a)
-{
 
-    ll res = 0;
-    for (int i = 0; i < n.length(); i++)
-         res = (res*10 + (n[i]-'0')) % a;
-
-    return res;
-}
 vector<int>e[MAX];
 bool visited[MAX];
 void DFS(int node)
